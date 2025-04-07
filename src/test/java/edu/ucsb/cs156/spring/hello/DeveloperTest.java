@@ -36,13 +36,49 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_correct_team() {
         // since the team name is hardcoded, we can just check if the team is the same
-        Team team = new Team("s25-02");
-        team.addMember("Shiyuan wang");
-        team.addMember("Ayala Wang");
-        team.addMember("Mujia Chen");
-        team.addMember("Xinyan Zhao");
-        team.addMember("Evania Cheng");
-        team.addMember("Jiahua Ren");
-        assertEquals(team.toString(), Developer.getTeam().toString());
+        Team t = Developer.getTeam();
+        assertEquals("s25-02", t.getName());
+        assertTrue(t.getMembers().contains("Shiyuan Wang"));
+        assertTrue(t.getMembers().contains("Ayala Wang"));
+        assertTrue(t.getMembers().contains("Mujia Chen"));
+        assertTrue(t.getMembers().contains("Xinyan Zhao"));
+        assertTrue(t.getMembers().contains("Evania Cheng"));
+        assertTrue(t.getMembers().contains("Jiahua Ren"));
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Shiyuan() {
+        Team t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Shiyuan Wang"), "Team should contain Shiyuan");
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Ayala() {
+        Team t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Ayala"), "Team should contain Ayala");
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Mujia() {
+        Team t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Mujia"), "Team should contain Mujia");
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Xinyan() {
+        Team t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Xinyan"), "Team should contain Xinyan");
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Evania() {
+        Team t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Evania"), "Team should contain Evania");
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Jiahua() {
+        Team t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Jiahua"), "Team should contain Jiahua");
     }
 }
