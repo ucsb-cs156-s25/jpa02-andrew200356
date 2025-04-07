@@ -1,6 +1,6 @@
 # STARTER-jpa02-andrew200356
 
-Repo: https://ucsb-cs156-s25/STARTER-jpa02-andrew200356
+Repo: https://github.com/ucsb-cs156-s25/jpa02-andrew200356.git
 
 Deployed at: https://jpa02-andrew200356.dokku-02.cs.ucsb.edu
 
