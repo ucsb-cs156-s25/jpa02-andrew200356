@@ -44,7 +44,7 @@ public class Developer {
     public static Team getTeam() {
         // TODO: Change this to your team name
         Team team = new Team("s25-02");
-        team.addMember("Shiyuan wang");
+        team.addMember("Shiyuan Wang");
         team.addMember("Ayala Wang");
         team.addMember("Mujia Chen");
         team.addMember("Xinyan Zhao");

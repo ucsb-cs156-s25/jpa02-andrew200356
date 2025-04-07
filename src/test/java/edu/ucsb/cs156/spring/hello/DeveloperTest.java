@@ -38,12 +38,6 @@ public class DeveloperTest {
         // since the team name is hardcoded, we can just check if the team is the same
         Team t = Developer.getTeam();
         assertEquals("s25-02", t.getName());
-        assertTrue(t.getMembers().contains("Shiyuan Wang"));
-        assertTrue(t.getMembers().contains("Ayala Wang"));
-        assertTrue(t.getMembers().contains("Mujia Chen"));
-        assertTrue(t.getMembers().contains("Xinyan Zhao"));
-        assertTrue(t.getMembers().contains("Evania Cheng"));
-        assertTrue(t.getMembers().contains("Jiahua Ren"));
     }
 
     @Test
@@ -55,30 +49,30 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_team_with_Ayala() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Ayala"), "Team should contain Ayala");
+        assertTrue(t.getMembers().contains("Ayala Wang"), "Team should contain Ayala");
     }
 
     @Test
     public void getTeam_returns_team_with_Mujia() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Mujia"), "Team should contain Mujia");
+        assertTrue(t.getMembers().contains("Mujia Chen"), "Team should contain Mujia");
     }
 
     @Test
     public void getTeam_returns_team_with_Xinyan() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Xinyan"), "Team should contain Xinyan");
+        assertTrue(t.getMembers().contains("Xinyan Zhao"), "Team should contain Xinyan");
     }
 
     @Test
     public void getTeam_returns_team_with_Evania() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Evania"), "Team should contain Evania");
+        assertTrue(t.getMembers().contains("Evania Cheng"), "Team should contain Evania");
     }
 
     @Test
     public void getTeam_returns_team_with_Jiahua() {
         Team t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("Jiahua"), "Team should contain Jiahua");
+        assertTrue(t.getMembers().contains("Jiahua Ren"), "Team should contain Jiahua");
     }
 }
