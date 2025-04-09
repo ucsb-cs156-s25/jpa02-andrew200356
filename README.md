@@ -1,9 +1,8 @@
 # STARTER-jpa02-andrew200356
 
-Repo: https://github.com/ucsb-cs156-s25/jpa02-andrew200356.git
+Repo: <https://github.com/ucsb-cs156-s25/jpa02-andrew200356.git>
 
-Deployed at: https://jpa02-andrew200356.dokku-02.cs.ucsb.edu
-
+Deployed at: <https://jpa02-andrew200356.dokku-02.cs.ucsb.edu>
 
 # About this repo
 
@@ -21,7 +20,6 @@ This is a minimal "Hello World" type webapp built with Spring Boot.
 | `mvn spring-boot:run` | Runs the code to startup a web server.  Access it via `http://localhost:8080` on the *same machine* where the server is running.  Use CTRL/C to stop it. |
 | `java -cp target/hello-1.0.0.jar edu.ucsb.cs156.spring.hello.Application` | If done after `mvn package`, runs the code to startup a web server.  |
 | `java -jar target/hello-1.0.0.jar | If done after `mvn package`, this is another way to start up the web server.|
-
 
 # Sources
 
@@ -45,13 +43,15 @@ below.
   * Converting test code to use JUnit 5 instead of JUnit 4  
 * Dokku Support
   * Ensuring that the `PORT` environment variable is
-    used to define the port on which Spring Boot starts the web server 
+    used to define the port on which Spring Boot starts the web server
 * Testing and CI
   * Adding JUnit tests
-  * Adding jacoco as a plugin to measure test 
+  * Adding jacoco as a plugin to measure test
     case coverage
   * Adding pitest for mutation test coverage.
   * Adding support for GitHub Actions to run
     the test cases, compute jacoco report,
     upload code coverage reports to Codecov.io,
     and produce pitest artifacts.
+
+hello world
